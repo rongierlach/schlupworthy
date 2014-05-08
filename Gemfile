@@ -20,4 +20,5 @@ gem 'shotgun'
 
 gem 'faker'
 gem 'rspec'
+gem 'nokogiri'
 
