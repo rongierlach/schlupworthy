@@ -24,7 +24,10 @@ GEM
       i18n (~> 0.5)
     i18n (0.6.9)
     json (1.8.1)
+    mini_portile (0.5.3)
     minitest (5.3.3)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.3)
@@ -61,6 +64,7 @@ DEPENDENCIES
   activesupport
   bcrypt
   faker
+  nokogiri
   pg
   rake
   rspec
