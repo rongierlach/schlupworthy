@@ -10,6 +10,7 @@ require 'rubygems'
 
 require 'uri'
 require 'pathname'
+require 'engtagger'
 
 require 'pg'
 require 'bcrypt'
