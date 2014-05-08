@@ -10,6 +10,8 @@ gem 'sinatra'
 # Use Thin for our web server
 gem 'thin'
 
+gem 'engtagger'
+
 gem 'activesupport'
 gem 'activerecord'
 
