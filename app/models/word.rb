@@ -4,7 +4,30 @@ class Word < ActiveRecord::Base
   has_many :prefixes, through: :suffix_relationships, source: :prefix
   has_many :suffixes, through: :prefix_relationships, source: :suffix
 
-  def self.alphas 
+  def next_word
+    relationships = Relationship.where(prefix_id: self.id).sort_by { |rel| rel.count }.reverse
+    num_rels = self.suffixes.count
+    num_occurrences = relationships.reduce(0) { |n, rel| rel.count + n }.to_f
+
+    suffixes_array = []
+    num_rels.times do |index|
+      rel = relationships[index]
+      suffix = Word.find(rel.suffix_id)
+      suffixes_array << suffix
+    end
+
+    rand_no = rand(0.0..1.0)
+    suffixes_array.each do |suffix|
+      rel = Relationship.where(prefix_id: self.id, suffix_id: suffix.id).first
+      probability = rel.count.to_f / num_occurrences.to_f
+      if (rand_no < probability)
+        return suffix
+      end
+      rand_no = rand_no - probability
+    end
+  end
+
+  def self.alphas
     Word.where('alpha > 0').sort_by { |word| word.alpha }.reverse
   end
 
@@ -12,7 +35,7 @@ class Word < ActiveRecord::Base
     Word.where('omega > 0').sort_by { |word| word.omega }.reverse
   end
 
-  def is_alpha? 
+  def is_alpha?
     alpha > 0
   end
 

@@ -1,4 +1,8 @@
 get '/' do
-  # render home page
+
   erb :index
+end
+
+post '/' do
+  markov
 end
