@@ -41,9 +41,18 @@ class Word < ActiveRecord::Base
     num_rels.times do |index|
       rel = relationships[index]
       suffix = Word.find(rel.suffix_id).text
-      occurences = rel.count
+      occurences = rel.count  
       puts "#{occurences} : #{suffix}"
     end
-
   end
+
+  def show_prefixed_pos(percent = 100)
+    percent = 100 if percent > 100
+    # count, sort, and display unique parts of speech in a collection of prefixes
+  end
+
+  def show_suffixed_pos(percent = 100)
+    percent = 100 if percent > 100
+  end
+
 end
