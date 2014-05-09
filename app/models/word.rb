@@ -25,15 +25,6 @@ class Word < ActiveRecord::Base
       end
       rand_no = rand_no - probability
     end
-
-
-    #   if (rand_no < )
-
-    # rand_no = rand(0,1)
-    # for each element in array
-    #   if(rand_num < element.probablity)
-    #     select and break
-    #   rand_num = rand_num - element.probability
   end
 
   def self.alphas

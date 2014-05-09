@@ -14,7 +14,7 @@
   font-family: 'bebas_neueregular';
   font-size: 8em;
   font-weight:lighter;
-  text-shadow: 0px 10px 0px #F1EFEA;
+  text-shadow: 0px 10px 0px #C0C0C0;
 }
 
 .headline h3 {
@@ -29,12 +29,12 @@ html {
 #content {
  background: #F1EFEA;
  width: 70%;
- height: 400px;
+ height: auto;
  min-height: 265px;
  margin: auto;
  padding-top: 32px;
  box-shadow: 0 0 5px #888888;
-
+border-radius: 10px;
 }
 
 #schlup-button {
@@ -47,17 +47,32 @@ html {
  height: 60px;
  margin: 0 auto;
  padding-top:15px;
- border-radius: 2px;
+ border-radius: 10px;
  text-align: center;
  text-transform: uppercase;
  box-shadow: 0 0 3px #999;
  cursor:pointer;
 }
 
+#schlup-button:hover {
+  background-color: #FF8A2D;
+  -webkit-transform: scale(1.5,1.5);
+  -moz-transform:scale(1.5,1.5);
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+
 #schlup {
- font-family: Lato, Helvetica, Arial, sans-serif;
- font-size: 1em;
+ font-family: Georgia, serif;
  margin: 32px auto;
+ width: 75%;
  text-align: center;
- line-height: 1.5em;
+ line-height: 2em;
+ color: black;
+}
+
+.footer {
+  text-align: center;
+  color: #FF6A0D;
 }
