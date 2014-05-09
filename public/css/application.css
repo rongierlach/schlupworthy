@@ -1,5 +1,63 @@
 .container {
   margin: 20px auto;
-  width: 800px;
+  width: 100%;
   padding: 0px 20px 20px 20px;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+}
+
+.headline h1 {
+  color: #FF6A0D;
+  font-family: 'bebas_neueregular';
+  font-size: 8em;
+  font-weight:lighter;
+  text-shadow: 0px 10px 0px #F1EFEA;
+}
+
+.headline h3 {
+  color: #FF6A0D;
+}
+
+html {
+ position:relative;
+ overflow: hidden;
+}
+
+#content {
+ background: #F1EFEA;
+ width: 70%;
+ height: 400px;
+ min-height: 265px;
+ margin: auto;
+ padding-top: 32px;
+ box-shadow: 0 0 5px #888888;
+
+}
+
+#schlup-button {
+ color: white;
+ font-family: 'bebas_neueregular';
+ font-size: 2.5em;
+ font-weight: lighter;
+ background-color: #FF6A0D;
+ width: 200px;
+ height: 60px;
+ margin: 0 auto;
+ padding-top:15px;
+ border-radius: 2px;
+ text-align: center;
+ text-transform: uppercase;
+ box-shadow: 0 0 3px #999;
+ cursor:pointer;
+}
+
+#schlup {
+ font-family: Lato, Helvetica, Arial, sans-serif;
+ font-size: 1em;
+ margin: 32px auto;
+ text-align: center;
+ line-height: 1.5em;
 }
