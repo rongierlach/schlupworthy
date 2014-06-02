@@ -1,9 +1,5 @@
-schlupworthy
-============
+# Schlupworthy  
+##The authentic Upworthy headline generator  
+Uses a Markov chain to combine words based on order of probability from a scrape of over 800 Upworthy headlines. 
 
-Ain't gonna schlup itself
-
-http://ruby-doc.org/gems/docs/e/engtagger-0.1.2/EngTagger.html
-
-word.scan(/\<([^\/].{2,6})\>/)
-puts $1
+Created by Ron Gierlach & Matt Diddier 2014
