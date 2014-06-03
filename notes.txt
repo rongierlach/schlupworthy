@@ -1,0 +1,44 @@
+_number_ __crazy_things___ that are so ___weird_description___ they will __transitive_verb__ your __noun___!!!1!1!!11!
+
+
+
+
+Lead-up expository sentences:
+
+___noun___ ____does_a_thing____ __in_a_place____ for ___reason____.
+
+
+
+
+Exaggerated statement about how you will feel about it:
+
+What happens next will ___transitive_verb___ your ___noun___!
+You won't believe the reason why!
+The ___superlative___ thing you'll ___verb___ all __noun___.
+
+
+
+
+
+
+
+
+
+def crazy_thing
+  thing = []
+  rand(3).times do
+    thing << adjectives.sample
+  end
+  thing << nouns.sample
+  thing.join(" ")
+end
+
+
+
+def does_a_thing
+  returning a string of present tense action phrase stuff
+  choose from random does_a_thing template and mad lib in words
+end
+
+
+things_to_do = [["present tense transitive verb singular", "article", "adjective", "noun"], ]
